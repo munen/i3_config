@@ -9,10 +9,18 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+# set $mod Mod1
+set $mod Mod4
+
+for_window [class="^.*"] border pixel 1
+
+for_window [class="sun-awt-X11-XFramePeer"] floating enable
+for_window [class="java-lang-Thread"] floating enable
+for_window [class="vr_logorrhoe-core"] floating enable
 
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font pango: Source Code Pro Regular 12
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -21,10 +29,10 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+Shift+Q kill
+bindsym control+Shift+K kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec "dmenu_run -fn arial"
 
 # lock
 bindsym $mod+ctrl+l exec i3lock -c fe0000
@@ -54,10 +62,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+b split horizontal
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+v split vertical
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
@@ -144,3 +152,4 @@ bar {
 
 new_window 1pixel
 exec xmodmap ~/.Xmodmap &
+exec dropbox start -i
