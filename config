@@ -99,6 +99,34 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
+# also use F-keys as additional workspaces
+# (Thx nico.schottelius@ungleich.ch!)
+bindsym $mod+F1  workspace 11:F1
+bindsym $mod+F2  workspace 12:F2
+bindsym $mod+F3  workspace 13:F3
+bindsym $mod+F4  workspace 14:F4
+bindsym $mod+F5  workspace 15:F5
+bindsym $mod+F6  workspace 16:F6
+bindsym $mod+F7  workspace 17:F7
+bindsym $mod+F8  workspace 18:F8
+bindsym $mod+F9  workspace 19:F9
+bindsym $mod+F10 workspace 20:F10
+bindsym $mod+F11 workspace 21:F11
+bindsym $mod+F12 workspace 22:F12
+
+bindsym $mod+Shift+F1 move workspace 11:F1
+bindsym $mod+Shift+F2 move workspace 12:F2
+bindsym $mod+Shift+F3 move workspace 13:F3
+bindsym $mod+Shift+F4 move workspace 14:F4
+bindsym $mod+Shift+F5 move workspace 15:F5
+bindsym $mod+Shift+F6 move workspace 16:F6
+bindsym $mod+Shift+F7 move workspace 17:F7
+bindsym $mod+Shift+F8 move workspace 18:F8
+bindsym $mod+Shift+F9 move workspace 19:F9
+bindsym $mod+Shift+F10 move workspace 20:F10
+bindsym $mod+Shift+F11 move workspace 21:F11
+bindsym $mod+Shift+F12 move workspace 22:F12
+
 # move focused container to workspace
 bindsym $mod+Shift+exclam move container to workspace 1
 bindsym $mod+Shift+at move container to workspace 2
