@@ -195,4 +195,9 @@ exec synclient PalmDetect=1
 exec synclient VertScrollDelta=-243
 exec synclient HorizScrollDelta=-243
 
-
+# don't activate screensaver
+exec xset s off
+# disable DPMS (Energy Star) features.
+exec xset -dpms
+# don't blank the video device
+exec xset s noblank
