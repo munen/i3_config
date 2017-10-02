@@ -181,3 +181,18 @@ bar {
 new_window 1pixel
 exec xmodmap ~/.Xmodmap &
 exec dropbox start -i
+exec nm-applet
+exec volumeicon
+exec owncloud
+
+# Tap to click
+exec synclient TapButton1=1
+# Two finger tap == Right Click
+exec synclient TapButton2=3
+# Three finger tap == Middle Click
+exec synclient PalmDetect=1
+# Natural Scroll direction
+exec synclient VertScrollDelta=-243
+exec synclient HorizScrollDelta=-243
+
+
