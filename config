@@ -32,7 +32,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym control+Shift+K kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec "dmenu_run -fn arial"
+bindsym $mod+d exec "rofi -combi-modi run,window -show combi -modi combi -matching fuzzy"
 
 # lock
 bindsym $mod+ctrl+l exec i3lock -c fe0000
