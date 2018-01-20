@@ -35,7 +35,10 @@ bindsym control+Shift+K kill
 bindsym $mod+d exec "rofi -combi-modi run,window -show combi -modi combi -matching fuzzy"
 
 # lock
-bindsym $mod+ctrl+l exec i3lock -c fe0000
+bindsym $mod+ctrl+l exec i3lock-fancy
+
+# move whole workspace to the monitor to the right (it's a thorus!)
+bindsym $mod+m move workspace to output right
 
 # change focus
 bindsym $mod+j focus left
