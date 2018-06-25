@@ -1,0 +1,4 @@
+clear lock
+clear mod1
+keycode 66 = Alt_L
+add mod1 = Alt_L Alt_R Meta_L
