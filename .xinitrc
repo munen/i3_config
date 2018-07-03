@@ -1,17 +1,24 @@
+export TERMINAL=qterminal
+
+kwalletd5 &
+
+# Wait for a bit. Otherwise there will be a racing condition for
+# several X-related commands like `xset`. Thanks @nico.
+sleep 3
+
 xrdb ~/.Xresources
 
 xmodmap ~/.Xmodmap
 
+
 dropbox start -i &
+emacs --daemon &
 nm-applet &
 volumeicon &
 owncloud &
 redshift &
 blueman-applet &
 
-# Wait for a bit. Otherwise there will be a racing condition for
-# several X-related commands like `xset`. Thanks @nico.
-sleep 2
 
 # Tap to click
 synclient TapButton1=1 &
