@@ -17,6 +17,7 @@ for_window [class="^.*"] border pixel 1
 for_window [class="sun-awt-X11-XFramePeer"] floating enable
 for_window [class="java-lang-Thread"] floating enable
 for_window [class="vr_logorrhoe-core"] floating enable
+for_window [class="xfreerdp"] floating enable
 
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -28,17 +29,31 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# start an emacs-client
+bindsym $mod+Tab exec emacsclient -c
+
+# take screenshot
+bindsym $mod+Shift+s exec "shutter -s"
+
 # kill focused window
 bindsym control+Shift+K kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec "rofi -combi-modi run,window -show combi -modi combi -matching fuzzy"
+bindsym $mod+d exec "rofi -combi-modi run,window -show combi -modi combi -matching fuzzy -levenshtein-sort"
+
+# brightness
+bindcode 232 exec "brightness darker"
+bindcode 233 exec "brightness brighter"
 
 # lock
 bindsym $mod+ctrl+l exec i3lock-fancy
 
 # move whole workspace to the monitor to the right (it's a thorus!)
 bindsym $mod+m move workspace to output bottom
+
+# move between workspaces with left/right arrow keys
+bindsym $mod+Mod1+Left workspace prev
+bindsym $mod+Mod1+Right workspace next
 
 # change focus
 bindsym $mod+j focus left
@@ -182,7 +197,3 @@ bar {
 }
 
 new_window 1pixel
-
-bindcode 232 exec "brightness darker"
-bindcode 233 exec "brightness brighter"
-

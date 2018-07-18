@@ -1,4 +1,9 @@
+export TERMINAL=qterminal
+
 xrdb -merge ~/.Xresources
+
+kwalletd5 &
+
 
 xmodmap ~/.Xmodmap
 
