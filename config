@@ -19,6 +19,11 @@ for_window [class="java-lang-Thread"] floating enable
 for_window [class="vr_logorrhoe-core"] floating enable
 for_window [class="xfreerdp"] floating enable
 
+# Move floating windows to 'scratchpad' workspace
+bindsym $mod+x [floating] move scratchpad
+# Bring back floating windows from 'scratchpad'
+bindsym $mod+shift+x scratchpad show
+
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango: Source Code Pro Regular 12
