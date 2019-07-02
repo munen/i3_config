@@ -4,30 +4,30 @@ xrdb -merge ~/.Xresources
 
 kwalletd5 &
 
-
 xmodmap ~/.Xmodmap
 
 nm-applet &
 volumeicon &
-redshift &
+# redshift &
+redshift-gtk &
 blueman-applet &
 emacs --daemon &
 
 # Wait for a bit. Otherwise there will be a racing condition for
 # several X-related commands like `xset`. Thanks @nico.
-# sleep 2
+sleep 2
 
-# Tap to click
-#synclient TapButton1=1 &
+# Tap to click. This is currently disabled since PalmDetect is very bad and fails _often_.
+# synclient TapButton1=1 &
 
 # Two finger tap == Right Click
-#synclient TapButton2=3 &
+synclient TapButton2=3 &
 
 # Three finger tap == Middle Click
-#synclient TapButton3=2 &
+synclient TapButton3=2 &
 
 # Palm Detection
-#synclient PalmDetect=1 &
+synclient PalmDetect=1 &
 
 # Natural Scroll direction
 #synclient VertScrollDelta=-243 &
