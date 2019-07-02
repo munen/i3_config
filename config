@@ -35,7 +35,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # start an emacs-client
-bindsym $mod+Tab exec emacsclient -c
+bindsym $mod+Tab exec emacsclient -c -a=''
 
 # take screenshot
 bindsym $mod+Shift+s exec "shutter -s"
@@ -54,7 +54,7 @@ bindcode 233 exec "brightness brighter"
 bindsym $mod+ctrl+l exec i3lock-fancy
 
 # move whole workspace to the monitor to the right (it's a thorus!)
-bindsym $mod+m move workspace to output bottom
+bindsym $mod+m move workspace to output right
 
 # move between workspaces with left/right arrow keys
 bindsym $mod+Mod1+Left workspace prev
