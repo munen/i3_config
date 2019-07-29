@@ -38,7 +38,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Tab exec emacsclient -c -a=''
 
 # take screenshot
-bindsym $mod+Shift+s exec "shutter -s"
+bindsym $mod+Shift+s exec "flameshot gui"
+bindcode 107 exec "flameshot gui"
 
 # kill focused window
 bindsym control+Shift+K kill
