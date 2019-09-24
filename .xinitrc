@@ -37,11 +37,11 @@ synclient PalmDetect=1 &
 #synclient HorizScrollDelta=-243 &
 
 # don't activate screensaver
-# xset s off &
+xset s off &
 # disable DPMS (Energy Star) features.
-# xset -dpms &
+xset -dpms &
 # don't blank the video device
-# xset s noblank &
+xset s noblank &
 
 # Load gnome-keyring
 dbus-update-activation-environment --systemd DISPLAY
