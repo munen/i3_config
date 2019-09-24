@@ -48,6 +48,9 @@ export SSH_AUTH_SOCK
 # Gnome HiDPI
 export GDK_SCALE=2
 
+# QT HiDPI
+export QT_SCREEN_SCALE_FACTORS=1.5
+
 dropbox start -i &
 owncloud &
 
