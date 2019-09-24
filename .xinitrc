@@ -13,6 +13,9 @@ redshift-gtk &
 blueman-applet &
 emacs --daemon &
 
+# parcimonie incrementaly refreshes a GnuPG keyring
+parcimonie &
+
 # Wait for a bit. Otherwise there will be a racing condition for
 # several X-related commands like `xset`. Thanks @nico.
 sleep 2
