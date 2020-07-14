@@ -18,6 +18,9 @@ bindsym $mod+shift+x scratchpad show
 # font for window titles
 font pango:DejaVu Sans 8
 
+# make window sticky
+bindsym $mod+Shift+s sticky toggle
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
