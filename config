@@ -3,6 +3,17 @@
 # set $mod Mod1
 set $mod Mod4
 
+# Helper function to move a floating window (for example a webcam)
+# from the very top to the very bottom quickly.
+# Usage: hit Mod4+shift+m, then Up or Down keys, then Mod4+shift+m,
+# again.
+mode "moveit" {
+    bindsym Up move up 1420px
+    bindsym Down move down 1420px
+    bindsym Mod4+shift+m mode "default"
+}
+bindsym Mod4+shift+m focus floating; mode "moveit"
+
 for_window [class="^.*"] border pixel 1
 
 for_window [class="sun-awt-X11-XFramePeer"] floating enable
